@@ -1,0 +1,23 @@
+package aluno;
+
+import java.util.Scanner;
+
+public class Executavel {
+	public static void main(String[] args) {
+		
+		int tabuada;
+		Scanner ler = new Scanner(System.in);
+		
+		System.out.println("Qual tabuada você quer?");
+		tabuada = ler.nextInt();
+		
+		for(int i=0;i<=10;i++){
+			System.out.println("A tabuada de "+ tabuada + " é:");
+			System.out.println(tabuada + " * " + i + " = " + tabuada*i);
+		}
+		
+		
+		ler.close();
+	}
+	
+}
